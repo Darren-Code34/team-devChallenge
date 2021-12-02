@@ -36,6 +36,7 @@ main{
 .crew-member img{
     width: 120px;
     height: 190px;
+    margin-right: 10px;
 }
 
 .crew-member .nom{
@@ -49,8 +50,10 @@ main{
     font-family: 'PT Serif', serif;
     font-size: 12px;
     text-transform: uppercase;
-    margin-top: 0;
-    transform: translateX(50px) translateY(-145px) rotateZ(90deg);
+    display: inline-block;
+	writing-mode: vertical-rl;
+    transform: translateX(110px) translateY(-220px);
+	
 }
 
 
@@ -67,3 +70,4 @@ footer a{
     color: #A9A9A9;
     font-weight: 700;
 }
+
