@@ -26,6 +26,7 @@ main{
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
     grid-template-rows: repeat(3, 1fr);
+    align-content: center;
 }
 
 
@@ -35,7 +36,7 @@ main{
 
 .crew-member img{
     width: 120px;
-    height: 190px;
+    height: 180px;
     margin-right: 10px;
 }
 
@@ -52,7 +53,7 @@ main{
     text-transform: uppercase;
     display: inline-block;
 	writing-mode: vertical-rl;
-    transform: translateX(110px) translateY(-220px);
+    transform: translateX(110px) translateY(-210px);
 	
 }
 
@@ -71,3 +72,77 @@ footer a{
     font-weight: 700;
 }
 
+@media only screen and (min-width: 600px){
+    main{
+        margin-top: 80px;
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .crew-member img{
+        width: 160px;
+        height: 210px;
+        
+    }
+
+    .crew-member .function{
+        transform: translateX(150px) translateY(-230px);
+        
+    }
+    
+    .member4, .member6{
+        transform: translateY(-40px);
+    }
+    .member5{
+        transform: translateY(60px);
+    }
+
+} 
+
+
+@media only screen and (min-width: 900px){
+    body{
+        padding: 0 70px;
+    }
+
+
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about {
+        margin-top: 35px;
+        width: 350px;
+    }
+    
+    
+    .crew-member img{
+        width: 180px;
+        height: 230px;
+        
+    }
+
+    .crew-member .function{
+        transform: translateX(170px) translateY(-250px);
+        
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    body{
+        padding: 0 90px;
+    }
+    
+    
+    .crew-member img{
+        width: 200px;
+        height: 250px;
+        
+    }
+
+    .crew-member .function{
+        transform: translateX(190px) translateY(-270px);
+        
+    }
+}
